@@ -6,9 +6,14 @@
       <ion-input id="di" placeholder="Direccion" [(ngModel)]="direccion"></ion-input>
       <ion-input id="te" placeholder="Telefono" [(ngModel)]="telefono"></ion-input>
   </div>
-  <ion-button (click)="generarQR()">
-    Imprimir QR
-  </ion-button>
+  <div class="btns">
+    <ion-button (click)="generarQR()">
+      Imprimir QR
+    </ion-button>
+    <ion-button (click)="escanearQR()">
+      Escanear QR  
+    </ion-button>
+  </div>
   <div class="qr">
     <div class="rig"></div>
     <qrcode id="print_qr" [qrdata]="url_qr" [size]="100" [level]="'M'" [usesvg]="'true'"></qrcode>

@@ -1,5 +1,7 @@
 {
   "name": "pj-ionic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

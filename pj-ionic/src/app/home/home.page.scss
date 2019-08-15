@@ -11,29 +11,19 @@ html{
 }
 
 .cont{
-    margin-top: 12vmin;
-    line-height: 50vh;
-    height: 45vmax;
+    margin-top: 5vmin;
+    height: 50vmax;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 20% 20% 20% 20%;
-    width: 100%;
-    padding: 1vmin;
+    padding: 2vmin;
 }
 
 ion-input{
-    border-radius: 6px;
-    margin-bottom: 2vmin;
+    border-radius: 2vmin;
+    margin: 2vmin;
     padding: 4vmin;
-    width: 100%;
     background: #f3f7ff;
-}
-
-ion-button{
-    width: 100%;
-    padding: 1vmin 10vmin;
-    height: 15%;
-    margin-top: 4vmin;
 }
 
 .qr{
@@ -42,5 +32,18 @@ ion-button{
     text-align: center;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    margin-top: 10vmin;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 100%;
+    margin-top: 4vmin;
+    padding: 2vmin;
+
+    ion-button{
+        height: 15vmin;
+        margin: 2vmin;
+    }
 }
