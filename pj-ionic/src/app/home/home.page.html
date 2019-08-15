@@ -1,0 +1,18 @@
+<ion-content>
+  <div class="cont">
+      <ion-input id="nm" placeholder="Nombre" [(ngModel)]="nombre"></ion-input>
+      <ion-input id="lo" placeholder="Longitud" [(ngModel)]="longitud"></ion-input>
+      <ion-input id="la" placeholder="Latitud" [(ngModel)]="latitud"></ion-input>
+      <ion-input id="di" placeholder="Direccion" [(ngModel)]="direccion"></ion-input>
+      <ion-input id="te" placeholder="Telefono" [(ngModel)]="telefono"></ion-input>
+  </div>
+  <ion-button (click)="generarQR()">
+    Imprimir QR
+  </ion-button>
+  <div class="qr">
+    <div class="rig"></div>
+    <qrcode id="print_qr" [qrdata]="url_qr" [size]="100" [level]="'M'" [usesvg]="'true'"></qrcode>
+    <div class="lef"></div>
+  </div>
+  <ion-label color="dark">{{url_qr}}</ion-label>
+</ion-content>
